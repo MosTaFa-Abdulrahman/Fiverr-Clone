@@ -1,0 +1,54 @@
+.home {
+  .features {
+    background-color: rgb(248, 243, 243);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+
+    .container {
+      width: 1400px;
+      display: flex;
+      align-items: center;
+      gap: 100px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        &:first-child {
+          flex: 2;
+        }
+        &:last-child {
+          flex: 3;
+        }
+
+        h1 {
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: gray;
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 300;
+          color: gray;
+          line-height: 20px;
+          letter-spacing: 1px;
+        }
+
+        video {
+          width: 720px;
+        }
+      }
+    }
+  }
+}

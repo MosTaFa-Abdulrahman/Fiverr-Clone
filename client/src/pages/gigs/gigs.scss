@@ -1,0 +1,105 @@
+.gigs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 1400px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .head {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #555;
+    }
+
+    h1 {
+    }
+
+    p {
+      color: #999;
+      font-weight: 300;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #555;
+        font-weight: 300;
+        span {
+        }
+
+        input {
+          padding: 5px;
+          outline: none;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+
+          &::placeholder {
+            color: #999;
+          }
+        }
+
+        button {
+          background-color: rgb(72, 72, 198);
+          color: white;
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .sortBy {
+          color: rgb(99, 99, 99);
+          font-weight: 300;
+        }
+
+        .sortType {
+          font-weight: 400;
+        }
+
+        img {
+          width: 20px;
+          cursor: pointer;
+        }
+
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 0.5px solid lightgrey;
+          border-radius: 5px;
+          position: absolute;
+          top: 265px;
+          right: 15px;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: rgb(79, 77, 77);
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
